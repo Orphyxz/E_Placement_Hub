@@ -1,5 +1,5 @@
 {
-  "name": "my-app",
+  "name": "e-placement-hub",
   "private": true,
   "version": "0.0.0",
   "type": "module",
@@ -10,17 +10,14 @@
   },
   "dependencies": {
     "chart.js": "^4.5.0",
-    "lucide-react": "^0.542.0",
     "react": "^18.2.0",
     "react-chartjs-2": "^5.3.0",
     "react-dom": "^18.2.0",
-    "react-icons": "^5.5.0"
+    "react-icons": "^5.5.0",
+    "react-router-dom": "^6.30.6"
   },
   "devDependencies": {
     "@vitejs/plugin-react": "^4.0.0",
-    "autoprefixer": "^10.4.21",
-    "postcss": "^8.5.6",
-    "tailwindcss": "^4.1.13",
     "vite": "^4.4.0"
   }
 }

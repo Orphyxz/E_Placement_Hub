@@ -1,12 +1,41 @@
-# React + Vite
+# E-Placement Hub
 
-This template provides a minimal setup to get React working in Vite with HMR and some ESLint rules.
+Frontend prototype of a college placement-cell dashboard. It gives placement coordinators an at-a-glance view of student placement status and upcoming recruitment drives.
 
-Currently, two official plugins are available:
+![Placement dashboard](docs/dashboard.jpg)
 
-- [@vitejs/plugin-react](https://github.com/vitejs/vite-plugin-react/blob/main/packages/plugin-react) uses [Babel](https://babeljs.io/) for Fast Refresh
-- [@vitejs/plugin-react-swc](https://github.com/vitejs/vite-plugin-react/blob/main/packages/plugin-react-swc) uses [SWC](https://swc.rs/) for Fast Refresh
+## Features
 
-## Expanding the ESLint configuration
+- Summary cards for total students, active drives, students selected and overall placement rate
+- Doughnut chart of placement status (Selected / Not Selected / In Progress) built with Chart.js
+- Upcoming recruitment drives list
+- Component scaffolding for creating and tracking drives (`CreateDrive`, `DriveTracking`, `AdminDashboard`)
 
-If you are developing a production application, we recommend using TypeScript with type-aware lint rules enabled. Check out the [TS template](https://github.com/vitejs/vite/tree/main/packages/create-vite/template-react-ts) for information on how to integrate TypeScript and [`typescript-eslint`](https://typescript-eslint.io) in your project.
+The dashboard currently runs on sample data from `src/data/dashboardData.js` and in-page constants. There is no backend yet.
+
+## Tech Stack
+
+React 18, Vite, React Router, Chart.js (`react-chartjs-2`), React Icons, plain CSS.
+
+## Running Locally
+
+```bash
+npm install
+npm run dev
+```
+
+Open http://localhost:5173. For a production build, run `npm run build`.
+
+## Project Structure
+
+```text
+src/
+  components/   Stat cards, doughnut chart, drives list, drive forms
+  pages/        DashboardPage and its styles
+  data/         Sample dashboard data
+```
+
+## Contributors
+
+- [Orphyxz](https://github.com/Orphyxz)
+- Purvika
